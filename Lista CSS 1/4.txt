@@ -1,0 +1,10 @@
+Como podemos incluir CSS em documentos HTML?
+
+tem 3 formas. Inline, interno ou através de um link 
+
+Inline : <p style="color:blue">Esse texto sera azul</p> 
+
+externo atraves de um link : criar um link dentro do head do html, com link=rel="stylesheet",href="style.css">
+
+interno: tag <style> entre o head e o body da pagina
+

@@ -1,0 +1,16 @@
+O que são seletores CSS? Quais são os tipos existentes?
+
+Os seletores sao as coordenadas que o CSS usa pra localizar o objeto no qual sera aplicado a regra de estilo.
+
+Os tipos de seletores são : 
+
+1 - Tag : seleciona todos os elementos de uma determinada tag na pagina.
+
+2 - Classe : seleciona todos os elementos de uma determinada classe. varios objetos podem ter a mesma classe, entao um seletor por classe pode ser ideal para aplicar em objetos que terao o mesmo estilo
+
+3 - ID : seleciona o elemento com o determinado id. So pode haver 1 ID por objeto, entao o seletor por ID seleciona apenas um objeto unico
+
+4 - Seletor Universal : seleciona todos os elementos da pagina
+
+5 - Seletor por atributo : seleciona todos os elementos que possuam determinado atributo. Ex :
+ a[target="_blank"] { color: red; }

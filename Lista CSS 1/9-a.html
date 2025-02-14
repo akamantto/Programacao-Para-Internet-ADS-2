@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .box{
+            height: 25%;
+            width: 100%;
+            text-align: center;
+            display: flex;align-items:center; justify-content: center;
+        }
+
+        #box1{
+            background-color: blue;
+        }
+        #box2{
+            background-color:green ;
+        }
+        #box3{
+            background-color: red;
+        }
+        #box4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--
+
+    As divs ficaram dessa forma pois cada div ocupa 100% da largura da tela, e como o comportamento padrao da div é pular linha foi isso que aconteceu
+
+-->
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

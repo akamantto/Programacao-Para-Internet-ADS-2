@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{margin: 0;box-sizing: border-box;}
+
+    body,html{
+        background-color: lightgrey;
+        border: 10px solid black;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 5px solid black;
+        margin: 10px;
+        display: inline-block;
+        outline : 5px solid mediumseagreen ;
+        text-align: center;
+    }
+    #box1{
+        background-color: blue;
+        border-top-color: red;
+        border-top-style: dotted;
+        border-radius: 5%;
+        padding: 20px;
+    }
+    #box1:hover{
+        background-color: lightskyblue ;
+        zoom: normal;
+    }
+
+    #box1:hover + #box2{
+        transform: scale(1.5);
+        background-color: aquamarine;
+    }
+    #box2{
+        background-color: red;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 7%;
+    }
+    #box3{
+        background: linear-gradient(to bottom,green, orange);
+    }
+    #box4{
+        background-color: blueviolet;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100%;
+        opacity: 0.5;
+        box-shadow: 10px 16px teal;
+        }
+</style>
+
+<body>
+    
+    <div class="box" id="box1">div-1</div>
+    <div class="box" id="box2">div-2</div>
+    <div class="box" id="box3">div-3</div>
+    <div class="box" id="box4">div-4</div>
+
+
+    <ol type="A">
+        <li>Criou-se uma borda de 5 px preta ao redor de cada div</li>
+        <li>cada uma das divs ficou com uma background color diferente</li>
+        <li>background color do body ficou cinza claro; bordas de 10px no body e html. as divs tao coladas na borda </li>
+        <li>agora as divs nao tao mais coladas na borda do html</li>
+        <li>as divs ficaram na mesma linha</li>
+        <li>a borda de cima da primeira div ficou com cor e estilo diferente das demais</li>
+        <li>as bordas da div 1 ficaram arredondadas</li>
+        <li>cada canto da div 2 ficou arredondada um tanto diferente</li>
+        <li>border-radius 50% deixou a div 4 circular, o texto se alinhou no topo do circulo com text align center; usei line-heigh : 100% pra deixar a altura da linha ocupando 100% da div</li>
+        <li>criou um contorno nas divs</li>
+        <li>eu ja tinha adicionado uma margem pras divs antes</li>
+        <li>aprendi a usar o linear gradiente, legal</li>
+        <li>o padding, distancia entre o conteudo e a borda, do box 1, aumentou. o box1 foi mais pra cima por causa do padding entre o texto e a borda superior</li>
+        <li>fico transparente o box4</li>
+        <li>usei o transform:scale(1.5) em #box1:hover + #box2 pra ativar o zoom sempre que passar o mouse no box1</li>
+        <li>o primeiro valor do box-shadow e a posicao horizontal da sombra, e o segundo valor e a posicao vertical</li>
+    </ol>
+</body>
+</html>

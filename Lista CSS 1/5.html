@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        /*regra 1 vai deixar os itens 1 e 5 vermelhos pois esses itens sao da tag Li e nao foram selecionados especificamente*/ li{color:red;}
+      /*regra 2 nao selecionou ninguem, pois o item 6 e 7 foram selecionado pela regra 4 e o item 8 foi selecionado pela regra 5*/ .churras{color:green;}
+      /*regra 3 selecionou todas as frutas, mas apenas o melao nao estava sendo selecionado por id ou outros*/ .fruta{color:gray}
+      /*regra 4 selecionou todos os .churras após a primeira li e botou na cor preta*/ li+li.churras{color: black;}
+      /*regra 5 selecionou todos os elementos de classe churras que sejam arrastaveis e botou a cor magenta*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6 tornou azul todos os elementos com as ids descritas, mas apenas a pera nao foi selecionada por outro seletor mais especifico*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7 selecionou mais especificamente a uva, selecionando id e classe na mesma regra*/ #lip3.fruta{color:orange}
+      /*regra 8 nao selecionou ninguem, pois busca um li da classe churras que tenha o id lip5, que nao existe*/ ol>li.churras#lip5{color:purple}
+
+</style>
+<body>
+    <ol>
+        <!--item 1--> <li id="lip0">Abacaxi</li>
+        <!--item 2--> <li           class="fruta">Melão</li>
+        <!--item 3--> <li id="lip2" class="fruta">Pera</li>
+        <!--item 4--> <li id="lip3" class="fruta">Uva</li>
+        <!--item 5--> <li id="lip4" class"fruta">Maçã</li>
+        <!--item 6--> <li           class="churras">Carne</li>
+        <!--item 7--> <li           class="churras">Linguiça</li>
+        <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+        </ol>        
+</body>
+</html>

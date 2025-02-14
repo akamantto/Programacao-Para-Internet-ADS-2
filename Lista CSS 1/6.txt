@@ -1,0 +1,15 @@
+Como podemos incluir CSS em documentos HTML? Cite e explique as diferentes formas de incorporar CSS (inline, internal, external) e comente o impacto de cada método no desempenho e na organização do código.
+
+tem 3 formas. Inline, interno ou através de um link 
+
+Inline : <p style="color:blue">Esse texto sera azul</p> 
+
+externo atraves de um link : criar um link dentro do head do html, com link=rel="stylesheet",href="style.css">
+
+interno: tag <style> entre o head e o body da pagina
+
+O css inline torna o codigo muito bagunçado e de dificil manutençao, e deve ser feito apenas para testes rapidos em homologacao.
+
+O css na tag antes do body fornece uma organizaçao melhor que o inline, mas torna o html muito grande e dificulta a divisao das tarefas. Alem disso, com um um codigo html muito extenso o site pode demorar muito pra abrir e acabar ficando mal otimizado.
+
+O css em um arquivo externo e a melhor opcao de todas, pois torna o codigo mais objetivo e organizado.
