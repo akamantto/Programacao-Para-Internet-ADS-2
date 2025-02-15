@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     *{
+          margin: 0;
+          box-sizing: border-box;
+          padding: 0;
+     }
+     .container{
+          display:grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          height: 100vh;
+          justify-items: center;
+          align-items: center;
+          
+     }
+     .box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 200px;
+     }
+     </style>
+<body>
+     <div class="container">
+          <div class="box" id="box1" style="background-color: red;grid-area:1/1 ;">box1</div>
+          <div class="box" id="box2" style="background-color: yellow;grid-area: 1/3;">box2</div>
+          <div class="box" id="box3" style="background-color: magenta;grid-area: 2/2;">box3</div>
+          <div class="box" id="box4" style="background-color: blue;grid-area: 3/1;">box4</div>
+          <div class="box" id="box5" style="background-color: green;grid-area: 3/3;">box5</div>
+     </div>
+</body>
+</html>
+
+<!--Usei display grid e organizei cada div em sua posicao pra ficar que nem a da foto-->
