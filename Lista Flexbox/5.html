@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sla</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f3f4f6;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 8px;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container {
+            width: 64px;
+            height: 256px;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .icon-container {
+            width: 40px;
+            height: 40px;
+            border-radius: 9999px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+        }
+        .icon-container i {
+            font-size: 20px;
+        }
+        .main-image-container {
+            width: 256px;
+            height: 256px;
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+        }
+        .main-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .text-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 16px;
+            color: white;
+        }
+        .text-container p {
+            margin: 0;
+        }
+        .text-container .title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="image-container">
+                <img src="images/verao.jpg">
+            </div>
+            <div class="icon-container">
+            </div>
+        </div>
+        <div class="main-image-container">
+            <img src="images/inverno.jpg">
+            <div class="text-container">
+                <p class="title">Oreetemauw</p>
+                <p>Omuke trughte a otutfa</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-container">
+                <img src="images/montanhas.jpg">
+            </div>
+            <div class="icon-container">
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-container">
+                <img src="images/primavera.jpg">
+            </div>
+            <div class="icon-container">
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-container">
+                <img src="images/outono.jpg">
+            </div>
+            <div class="icon-container">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

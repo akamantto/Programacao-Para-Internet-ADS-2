@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .header {
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .header .circles {
+            display: flex;
+            gap: 10px;
+        }
+        .header .circle {
+            width: 16px;
+            height: 16px;
+            background-color: #00bfa5;
+            border-radius: 50%;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        .navigation {
+            background-color: #ff7f00;
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navigation span {
+            color: white;
+            font-weight: bold;
+        }
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .content-container .header {
+            background-color: #00bfa5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+        .content-container .header span {
+            color: white;
+            font-weight: bold;
+        }
+        .content {
+            background-color: #6a0dad;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content span {
+            color: white;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #00bfa5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+        .footer span {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="navigation">
+                <span>NAVEGAÇÃO</span>
+            </div>
+            <div class="content-container">
+                <div class="header">
+                    <span>CABEÇALHO</span>
+                </div>
+                <div class="content">
+                    <span>CONTEÚDO</span>
+                </div>
+                <div class="footer">
+                    <span>RODAPÉ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
