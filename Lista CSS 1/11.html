@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Chat</title>
-     <link rel="stylesheet" href="10.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="11.css">
 </head>
 <body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+
+                <div class="login-button">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="icons-chat-template/menu_white_36dp.svg"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+        </div>
+
+        </div>
+    </header>
+
+
+    <div class="chat">
+
+
      <div class="container">
           <label for="#msg1">Pedro Silva</label>
           <div class="message" id="msg1">
@@ -45,8 +84,12 @@
           </div>
           <div class="container-send-message">
                <textarea name="type-message" placeholder="Digite sua mensagem" style="resize: none;"></textarea>
-               <button>→</button>
+               <button>Enviar</button>
           </div>
      </div>
+
+    </div>
+
+    <script src="11.js"></script>
 </body>
 </html>
