@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+</head>
+<style>
+     *{
+          padding: 0;
+          margin: 0;
+     }
+
+     body,html{
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     #container{
+          width: auto;
+          height: auto;
+          padding: 20px;
+          border: 1px solid black;
+          display: flex;
+          flex-flow: column wrap;
+          align-content: center;
+     }
+
+     #container button{
+          margin-top: 20px;
+     }
+
+</style>
+<body>
+     <div id="container">
+          <label for="#input1">Minimo :</label>
+          <input type="text" id="input1" placeholder="Digite um numero">
+          <label for="#input2">Maximo :</label>
+           <input type="text" id="input2" placeholder="Digite um numero">
+           <button>Gerar Numero aleatorio</button>
+     </div>
+     <script src="5.js"></script>
+     
+</body>
+</html>

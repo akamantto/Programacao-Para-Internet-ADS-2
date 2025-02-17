@@ -1,0 +1,1 @@
+No segundo codigo a tag script ta antes do body, entao ela tenta executar todas as funçoes antes mesmo de carregar o DOM da página.

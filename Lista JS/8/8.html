@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+     }
+
+     body,
+     html {
+          height:100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: gray;
+     }
+
+     .container {
+          background-color: white;
+          padding: 20px;
+          border-radius: 7px;
+          display: flex;
+          flex-direction: column;
+          max-width: 30%;
+          gap: 10px;
+     }
+
+     #result{
+          color: black;
+     }
+</style>
+
+<body>
+     <div class="container">
+          <label for="#interval-start">Primeiro Numero:</label>
+          <input type="text" id="interval-start">
+
+          <label for="interval-end">Ultimo Numero</label>
+          <input type="text" id="interval-end">
+
+          <button>Gerar Quantidade de Numeros Primos</button>
+
+          <div id="result"></div>
+     </div>
+     <script src="8.js"></script>
+</body>
+
+</html>
